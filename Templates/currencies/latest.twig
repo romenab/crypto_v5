@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Top 10</title>
+    <style>
+        th {
+            background-color: #adadad;
+            padding: 10px;
+        }
+        td {
+            background-color: #D3D3D3;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Top 10 crypto</h1>
+<table class="table-auto">
+    <thead>
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for currency in currencies %}
+        <tr>
+            <td>{{ currency.number }}</td>
+            <td>{{ currency.name }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Buy</title>
+    <style>
+        form.example input[type=text],
+        form.example input[type=number]{
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 20%;
+            background: #f1f1f1;
+        }
+        form.example button {
+            float: left;
+            width: 4%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Buy crypto</h1>
+
+<form class="example" action="/buy" method="POST">
+    <label>
+        <input type="text" placeholder="Enter crypto name.." name="crypto_name" required/>
+    </label>
+    <label>
+        <input type="number" placeholder="Enter amount to spend.." name="crypto_amount" required/>
+    </label>
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+</body>
+</html>

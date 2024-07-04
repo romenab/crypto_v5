@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Transactions</title>
+    <style>
+        th {
+            background-color: #adadad;
+            padding: 10px;
+        }
+        td {
+            background-color: #D3D3D3;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Transactions</h1>
+<table class="table-auto">
+    <thead>
+    <tr>
+        <th>Trade</th>
+        <th>Crypto name</th>
+        <th>Spent</th>
+        <th>Received</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for currency in currencies %}
+        <tr>
+            <td>{{ currency.trade }}</td>
+            <td>{{ currency.crypto_name }}</td>
+            <td>{{ currency.spent }}</td>
+            <td>{{ currency.received }}</td>
+            <td>{{ currency.price }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
